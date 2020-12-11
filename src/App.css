@@ -1,6 +1,6 @@
 .App {
   width: 60vw;
-  margin: 4vh auto;
+  margin: 2vh auto;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,9 @@ input {
   outline: none;
 }
 .todos {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  max-height: 60vh;
+  overflow-y: auto;
 }
 .todo {
   display: flex;
@@ -32,6 +34,7 @@ input {
   padding: 0.3rem 1rem;
   align-items: center;
   cursor: pointer;
+  margin-bottom: 0.05rem;
 }
 .todo p {
   flex: 1;
