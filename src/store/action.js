@@ -11,8 +11,8 @@ export const deleteTodo = (id) => ({
     id,
   },
 });
-export const executeTodo = (id) => ({
-  type: "EXECUTE_TODO",
+export const toggleTodo = (id) => ({
+  type: "TOGGLE_TODO",
   payload: {
     id,
   },

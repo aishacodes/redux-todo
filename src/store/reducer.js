@@ -19,9 +19,9 @@ const reducer = (
     case "DELETE_TODO":
       return state.filter((todo) => todo.id !== action.payload.id);
       break;
-    case "EXECUTE_TODO":
+    case "TOGGLE_TODO":
       return state.map((todo) => {
-        if (todo.id === action.payload.id) todo.done = true;
+        if (todo.id === action.payload.id) todo.done = !todo.done;
         return todo;
       });
       break;

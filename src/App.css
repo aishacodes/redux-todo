@@ -35,7 +35,13 @@ input {
   align-items: center;
   cursor: pointer;
   margin-bottom: 0.05rem;
+  margin-top: 0.05rem;
 }
+
 .todo p {
   flex: 1;
+}
+.todo p.done {
+  color: grey;
+  text-decoration: line-through;
 }
